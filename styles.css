@@ -750,11 +750,6 @@ footer p {
     .menu-mobile {
         display: block;
     }
-
-    .navigation-main-mobile {
-        justify-content: space-around;
-
-    }
     .email {
         font-size: 0.8rem;
     }
