@@ -1,3 +1,3 @@
 # yavor-koen-personal-page
 
-## A static website built with JavaScript, CSS, HTML only.
+## A static website built with Javascript, CSS, HTML only.
