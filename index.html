@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/node_modules/flickity/css/flickity.css" media="screen">
+    <link rel="stylesheet" href="./styles.css">
     <script src="https://kit.fontawesome.com/a2b76bc7b3.js" crossorigin="anonymous"></script>
     <script type="module" src="./app.js" defer></script>
     <title>Yavor Koen</title>
@@ -28,10 +29,10 @@
             <ul class="navigation-main-mobile">
                 <li class="logo"><a class="mobile-link" id="logo-name" href="#home">yavor koen</a></li>
                 <li class="button-li">
-                        <button id="menu-button" class="menu-button mobile-link">
-                            <div class="burger-menu" id="first-line"></div>
-                            <div class="burger-menu" id="second-line"></div>
-                        </button>
+                    <button id="menu-button" class="menu-button mobile-link">
+                        <div class="burger-menu" id="first-line"></div>
+                        <div class="burger-menu" id="second-line"></div>
+                    </button>
                 </li>
                 <ul class="navigation-mobile">
                     <li><a class="mobile-link" href="#about">about</a></li>
@@ -59,7 +60,7 @@
             <div class="about-content">
                 <div class="empty-div"></div>
                 <h1 class="heading">About</h1>
-                <img src="./images/personal-photo.jpg"  alt="portrait of author">
+                <img src="./images/personal-photo.jpg" alt="portrait of author">
                 <div class="about-text">
                     <p>
                         I've always had an interest in computer technologies but never indulged myself in them seriously
@@ -184,7 +185,6 @@
                             <img src="./images/synth-shop.JPG" alt="in a synth shop">
                         </div>
                     </div>
-
                     <div class="music-content">
                         <p class="text heading">Music has been an important part of my life. I love playing and
                             listening to
@@ -204,7 +204,7 @@
                 <p class="text heading">I believe that meeting other people and seeing new places can be a very
                     enriching experience that gains culture and better understanding of our world. Here are just a few
                     snapshots from my travellings</p>
-                <div class="travelling-media">
+                <!-- <div class="travelling-media">
                     <div class="travel-image">
                         <figure><img src="./images/bridge-locks.JPG" alt="Helsinki bridge of love">
                             <figcaption>Bridge of love - Helsinki, Finland</figcaption>
@@ -233,6 +233,38 @@
                     <div class="travel-image">
                         <figure><img src="./images/turku.jpg" alt="Turku, Finland">
                             <figcaption>Turku, Finland</figcaption>
+                        </figure>
+                    </div>
+                </div> -->
+                <div class="main-carousel">
+                    <div class="carousel-cell">
+                        <figure><img src="./images/stockholm-car.jpg" alt="Vintage car in Stockholm">
+                            <figcaption>Stockholm, Sweden</figcaption>
+                        </figure>
+                    </div>
+                    <div class="carousel-cell">
+                        <figure><img src="./images/bridge-locks.JPG" alt="Helsinki bridge of love">
+                            <figcaption>Bridge of love - Helsinki, Finland</figcaption>
+                        </figure>
+                    </div>
+                    <div class="carousel-cell">
+                        <figure><img src="./images/sibelius-monument.JPG" alt="Sibelius monument Helsinki">
+                            <figcaption>Sibelius monument - Helsinki, Finland</figcaption>
+                        </figure>
+                    </div>
+                    <div class="carousel-cell">
+                        <figure><img src="./images/turku.jpg" alt="Turku, Finland">
+                            <figcaption>Turku, Finland</figcaption>
+                        </figure>
+                    </div>
+                    <div class="carousel-cell">
+                        <figure><img src="./images/greece-clouds.JPG" alt="Athos Greece">
+                            <figcaption>Sythonia, Greece</figcaption>
+                        </figure>
+                    </div>
+                    <div class="carousel-cell">
+                        <figure><img src="./images/greece-sunset.jpg" alt="Sunset in Sythonia">
+                            <figcaption>Mount Athos, Greece</figcaption>
                         </figure>
                     </div>
                 </div>
@@ -291,7 +323,8 @@
                             class="fab fa-brands fa-square-instagram"></i></a>
                     <a href="https://github.com/yavorkoen" target="_blank"><i
                             class="fa-brands fa-square-github"></i></a>
-                    <a href="https://linkedin.com/in/yavor-cohen-9376133b" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://linkedin.com/in/yavor-cohen-9376133b" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
 
                 </div>
 
@@ -303,6 +336,7 @@
         <p>All photos by Yavor Koen except "Computer coding screengrab" by Marcus Spiske</p>
         <p>Video by Ivan Andreev</p>
     </footer>
+    <script src="node_modules/flickity/dist/flickity.pkgd.min.js"></script>
 </body>
 
 </html>
