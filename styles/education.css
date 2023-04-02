@@ -1,0 +1,36 @@
+/* Education Page */
+
+.education {
+    background: rgb(34, 108, 71);
+    color: black;
+}
+
+.education section {
+    padding: 3%;
+    background: rgb(56, 123, 89);
+}
+
+.education ul li {
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+.animated-line {
+    width: 90%;
+    height: 2px;
+    background-color: darkgray;
+    transform: scaleX(0);
+
+}
+
+.animated-line.active {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 1000ms cubic-bezier(.65, .05, .36, 1);
+}
+
+.tech-stack .title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5%;
+}

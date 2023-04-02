@@ -1,0 +1,140 @@
+/* Header */
+
+header {
+    width: 100%;
+    height: 8vh;
+    padding: 1rem;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 0;
+    bottom: 87%;
+    z-index: 3;
+    transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+}
+
+.menu-desktop,
+.menu-mobile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.5px;
+}
+
+.navigation,
+.navigation-main-mobile {
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    flex-basis: 50%;
+    list-style-type: none;
+}
+
+/* Mobile Navigation */
+
+.menu-mobile {
+    background: inherit;
+    display: none;
+    padding-top: 2%;
+}
+
+.burger-menu {
+    width: 15px;
+    height: 1px;
+    margin-bottom: 4px;
+    background: inhreit;
+    transition: transform 1s ease;
+}
+
+.navigation-mobile {
+    position: fixed;
+    top: 4rem;
+    right: 1rem;
+    background: inherit;
+    transform: translateX(120%);
+    transition: transform 900ms ease;
+}
+
+.navigation-mobile.active {
+    transform: translateX(0);
+}
+
+@keyframes navLinkFadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes navLinkFadeOut {
+    from {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+    to {
+        opacity: 0.6;
+        transform: translateX(50px);
+    }
+}
+
+.navigation-mobile li {
+    padding: 0.5rem;
+    list-style-type: none;
+    opacity: 0;
+}
+
+.button-li {
+    width: 55px;
+    text-align: center;
+}
+
+.menu-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    padding: 5px;
+}
+
+.link, .mobile-link {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.link:after {
+    content: "";
+    border-bottom: solid 1px;
+    border-color: inherit;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 300ms cubic-bezier(.65, .05, .36, 1);
+}
+
+article {
+    width: 100%;  
+    padding: 10%;
+}

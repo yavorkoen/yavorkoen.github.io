@@ -1,0 +1,32 @@
+/* About Page */
+
+.about {
+    min-height: 100vh;
+    transform: scale(0.7);
+    transition: transform .5s cubic-bezier(.65, .05, .36, 1), border 500ms cubic-bezier(.65, .05, .36, 1);
+    margin: auto;
+    background: rgb(22, 32, 54);
+    overflow: hidden;
+}
+
+.about-text {
+    min-width: 200px;
+    flex-basis: 50%;
+    opacity: 0;
+}
+
+.about-text p {
+    text-indent: 1rem;
+    line-height: 1.7;
+}
+
+.about img {
+    width: 40%;
+    object-fit: scale-down;
+    object-position: top;
+    padding-right: 4%;
+    padding-bottom: 2.7%;
+    float: left;
+    filter: opacity(0.9);
+
+}

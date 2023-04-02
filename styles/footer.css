@@ -1,0 +1,16 @@
+/* Footer */
+footer {
+    width: 100%;
+    height: 30vh;
+    background: rgb(23, 23, 23);
+    color: rgb(217, 212, 203);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+    font-style: italic;
+}
+footer p {
+    text-align: center;
+}

@@ -1,0 +1,100 @@
+/* Contacts */
+.contacts {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.contacts-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    color: inherit;
+    background-color: rgb(8, 58, 64);
+    padding: 10%;
+    margin: auto;
+    border-radius: 0 50% 0 50%;
+    transform: translateX(10%) translateY(10%) scale(0.8);
+    transition: transform 600ms ease-out, border-radius 1200ms ease-out;
+    animation: fluidBox 3000ms ease-in-out alternate infinite 20ms; 
+}
+
+.contacts-links {
+    margin-top: 20px;
+}
+.contacts-links a {
+    position: relative;
+    text-decoration: none;
+    margin: 0px 6px;
+    color:rgb(217, 212, 203);
+    font-size: 2rem;
+    
+}
+.email {
+    position: relative;
+    font-size: 1.5rem;
+    display: inline-block;
+}
+.email-address {
+   letter-spacing: -1px;
+   margin: 20px 0;
+   display: inline-block;
+   cursor: grab;
+}
+.email-address:after, .contacts-links a:after {
+    content: "";
+    border-bottom: solid 2px;
+    border-color: inherit;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 400ms cubic-bezier(.65, .05, .36, 1);
+}
+
+
+.clipboard-popup {
+    visibility: hidden;
+    opacity: 0;
+    background-color: black;
+    color: rgb(217, 212, 203);
+    font-size: 0.7rem;
+    border-radius: 8px 8px 8px 0px;
+    padding: 10px 15px;
+    position: absolute;
+    top: -20px;
+    left: 30px;
+    transition: visibility .2s, opacity .2s ease-in-out;
+    
+}
+
+.email-address:active {
+    cursor: grabbing;
+}
+.email-address span {
+    display: inline-block;
+    animation: flip 3s infinite;
+    animation-delay: calc(.1s * var(--i));
+}
+@keyframes fluidBox {
+    from {
+        border-radius: 0 50% 0 50%;
+    }
+    to {
+        border-radius: 50% 0 50% 0;
+    }
+}
+
+@keyframes flip {
+   0%, 50% {
+    transform:rotateY(360deg);
+  
+   }   
+}
+.email-address:hover + .clipboard-popup {
+    visibility: visible; 
+    opacity: 1;
+}
